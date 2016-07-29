@@ -26,8 +26,91 @@
 <head>
 <meta charset="utf-8" />
 <title>Pack This!</title>
-<meta name="generator" content="Geany 1.27" />
-<link rel="stylesheet" href="style.css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+body {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: .9rem;
+	margin: 1rem;
+	background: darkblue;
+	color: darkblue;
+}
+
+h1 {
+	font-size: 16vw;
+	text-align: center;
+	color: linen;
+}
+
+h2 {
+	font-size: 1rem;
+	text-align: center;
+	color: linen;
+}
+
+form.form {
+	background: ghostwhite;
+	padding: .5rem;
+	border-radius: 1rem;
+	border: .125rem solid MediumSlateBlue;
+}
+
+fieldset.group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+	padding: 1rem;
+	border-radius: 1rem;
+	border: .125rem solid MediumSlateBlue;
+	
+}
+legend.group {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+fieldset.subgroup {
+	flex: 1;
+	min-width: 15em;
+	margin: 0.5rem;
+	border-radius: 1rem;
+	border: .125rem solid MediumSlateBlue;
+
+}
+
+legend.subgroup {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+div.item {
+	line-height: 2rem;
+	vertical-align: middle;
+}
+
+input[type="checkbox"] {
+	vertical-align: middle;
+}
+
+input[type="text"] {
+	text-align: right;
+	float: right;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 1rem auto;
+	
+}
+
+label {
+
+}
+
+</style>
 </head>
 
 <body>
@@ -39,11 +122,11 @@
 		<legend class="subgroup">Travel Aids</legend>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="pleasure-reading" />
-			<label for="pleasure-reading">Pleasure Reading</label>
+			<label for="pleasure-reading">Pleasure reading</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="chewing-gum" />
-			<label for="chewing-gum">Chewing Gum</label>
+			<label for="chewing-gum">Chewing gum</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="snacks" />
@@ -51,7 +134,7 @@
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="water-bottle" />
-			<label for="water-bottle">Water Bottle</label>
+			<label for="water-bottle">Water bottle</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="earplugs" />
@@ -59,23 +142,23 @@
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="sleeping-mask" />
-			<label for="sleeping-mask">Sleeping Mask</label>
+			<label for="sleeping-mask">Sleeping mask</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="travel-pillow" />
-			<label for="travel-pillow">Travel Pillow</label>
+			<label for="travel-pillow">Travel pillow</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="motion-sickness-remedy" />
-			<label for="motion-sickness-remedy">Motion Sickness Remedy</label>
+			<label for="motion-sickness-remedy">Motion sickness remedy</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="sleeping-pills" />
-			<label for="sleeeping-pills">Sleeping Pills</label>
+			<label for="sleeeping-pills">Sleeping pills</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="anxiety-medication" />
-			<label for="anxiety-medication">Anxiety Medication</label>
+			<label for="anxiety-medication">Anxiety medication</label>
 		</div>
 	</fieldset>
 	<fieldset class="subgroup">
@@ -90,15 +173,15 @@
 			</div>
 			<div class="item">
 				<input type="checkbox" name="basics"  id="credit-cards" />
-				<label for="credit-cards">Credit Cards	</label>
+				<label for="credit-cards">Credit cards</label>
 			</div>
 			<div class="item">
 				<input type="checkbox" name="basics"  id="debit-cards" />
-				<label for="debit-cards">Debit Cards</label>
+				<label for="debit-cards">Debit cards</label>
 			</div>
 			<div class="item">
 				<input type="checkbox" name="basics"  id="travelers-checks" />
-				<label for="travelers-checks">Traveler's Checks</label>
+				<label for="travelers-checks">Traveler's checks</label>
 			</div>
 	</fieldset>
 	<fieldset class="subgroup">
@@ -121,11 +204,11 @@
 			</div>
 			<div class="item">
 				<input type="checkbox" name="basics"  id="travel-confirmation" />
-				<label for="travel-confirmation">Travel Confirmation</label>
+				<label for="travel-confirmation">Travel confirmation</label>
 			</div>
 			<div class="item">
 				<input type="checkbox" name="basics"  id="travel-guides" />
-				<label for="travel-guides">Travel Guides</label>
+				<label for="travel-guides">Travel guides</label>
 			</div>
 	</fieldset>
 </fieldset>
@@ -135,15 +218,15 @@
 		<legend class="subgroup">Documents</legend>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Copies of Travel Documents</label>
+			<label for="passport-visas">Copies of travel documents</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Copies of Credit Cards</label>
+			<label for="passport-visas">Copies of credit cards</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Copies of Passport</label>
+			<label for="passport-visas">Copies of passport</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
@@ -151,19 +234,19 @@
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Emergency Contact Info</label>
+			<label for="passport-visas">Emergency contact info</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Medical Insurance Card</label>
+			<label for="passport-visas">Medical insurance card</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Medical History</label>
+			<label for="passport-visas">Medical history</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">List of Medications</label>
+			<label for="passport-visas">List of medications</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
@@ -171,18 +254,18 @@
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Travel Insurance</label>
+			<label for="passport-visas">Travel insurance</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Car Insurance Card</label>
+			<label for="passport-visas">Car insurance card</label>
 		</div>
 	</fieldset>
 	<fieldset class="subgroup">
 		<legend class="subgroup">Bags</legend>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Backpack/Daybag</label>
+			<label for="passport-visas">Backpack/daybag</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
@@ -190,42 +273,42 @@
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Collapsible Tote</label>
+			<label for="passport-visas">Collapsible tote</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Money Belt</label>
+			<label for="passport-visas">Money belt</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Shoulder Straps</label>
+			<label for="passport-visas">Shoulder straps</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Plastic Bags</label>
+			<label for="passport-visas">Plastic bags</label>
 		</div>
 	</fieldset>
 	<fieldset class="subgroup">
 		<legend class="subgroup">Laundry</legend>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Laundry Bag</label>
+			<label for="passport-visas">Laundry bag</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Laundry Kit</label>
+			<label for="passport-visas">Laundry kit</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Stain Remover</label>
+			<label for="passport-visas">Stain remover</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Sewing Kit</label>
+			<label for="passport-visas">Sewing kit</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Travel Iron</label>
+			<label for="passport-visas">Travel iron</label>
 		</div>
 	</fieldset>
 	<fieldset class="subgroup">
@@ -236,11 +319,11 @@
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">House Keys</label>
+			<label for="passport-visas">House keys</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
-			<label for="passport-visas">Travel Locks and Keys</label>
+			<label for="passport-visas">Travel locks and keys</label>
 		</div>
 		<div class="item">
 			<input type="checkbox" name="basics"  id="passport-visas" />
